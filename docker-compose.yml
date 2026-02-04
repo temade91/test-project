@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  user-service:
+    image: temade91/netflix-clone:latest
+    container_name: netflix-clone
+    ports:
+      - "4001:80"
+    restart: always
+    environment:
+      - PORT=4001
